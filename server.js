@@ -37,7 +37,7 @@ app.post("/contact", async (req, res) => {
         if (error) {
             console.log(error);
         } console.log("Success");
-        return res.redirect("/#contact")
+        return res.redirect("/")
     })
 
 })
