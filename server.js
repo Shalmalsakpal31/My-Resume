@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 
 
 
-app.post("/contact", async (req, res) => {
+app.post("/", async (req, res) => {
     const {email,subject,message} = await req.body
     // console.log(data);
     const Auth = nodemailer.createTransport({
